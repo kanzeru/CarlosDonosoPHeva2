@@ -44,22 +44,4 @@ export class HomePage implements OnInit {
     this.loadRandomCita();
   }
 
-  async deleteCita() {
-    if (!this.showButtonDelete) return;
-
-    const alert = await this.alertController.create({
-      header:'Confirmar',
-      message:'¿Estas seguro de eliminar esta cita?',
-      buttons: [
-        {
-          text:'Eliminar',
-          handler: () => {
-            this.citaService.deleteCita(this.cita.id);
-            this.loadRandomCita();
-          }
-        }
-      ]
-    });
-    await alert.present();
-  }
 }
