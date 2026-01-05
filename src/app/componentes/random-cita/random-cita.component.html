@@ -5,13 +5,13 @@
       </ion-card-header>
       
       <ion-card-content>
-        <p class="frase">"{{frase}}"</p>
+        <p class="texto">"{{texto}}"</p>
         
-        <div *ngIf="mostrarBotonBorrar" class="boton-container">
+        <div *ngIf="showDeleteButton" class="boton-container">
           <ion-button 
             expand="full" 
             color="danger" 
-            (click)="onBorrarCita()"
+            (click)="onDeleteCita()"
             class="boton-borrar">
             <ion-icon name="trash-outline" slot="start"></ion-icon>
             Eliminar Cita
