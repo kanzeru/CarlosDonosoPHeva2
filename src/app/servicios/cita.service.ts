@@ -7,7 +7,9 @@ export class CitaService {
   private citas: any[] = [
     { id: 1, texto: 'La vida es lo que pasa mientras estás ocupado haciendo otros planes.', autor: 'John Lennon' },
     { id: 2, texto: 'Sé el cambio que quieres ver en el mundo.', autor: 'Mahatma Gandhi' },
-    { id: 3, texto: 'La única forma de hacer un gran trabajo es amar lo que haces.', autor: 'Steve Jobs' }
+    { id: 3, texto: 'La única forma de hacer un gran trabajo es amar lo que haces.', autor: 'Steve Jobs' },
+    { id: 4, texto: 'Recuerda que sólo porque tocaste fondo, no significa que tengas que quedarte allí', autor: 'Robert Downey Jr.'}
+
   ];
 
   getRandomCita(): any {
