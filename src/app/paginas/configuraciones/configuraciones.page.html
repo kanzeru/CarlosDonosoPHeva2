@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Configuración</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Opciones de la Aplicación</ion-card-title>
+    </ion-card-header>
+    
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Permitir borrar citas en el inicio</ion-label>
+        <ion-toggle 
+          [(ngModel)]="canDeleteFromHome"
+          (ionChange)="saveConfiguracion()"
+          name="canDelete">
+        </ion-toggle>
+      </ion-item>
+      <p class="descripcion">Habilita o deshabilita el botón para eliminar citas en la pantalla principal.</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Acerca de la Aplicación</ion-card-title>
+    </ion-card-header>
+    
+    <ion-card-content>
+      <p>Aplicación para gestionar citas famosas.</p>
+      @if (true) {
+        <p class="ion-margin-top"><strong>Características:</strong></p>
+        <ul>
+          <li>Visualizar cita aleatoria</li>
+          <li>Agregar nuevas citas</li>
+          <li>Eliminar citas existentes</li>
+          <li>Configurar preferencias</li>
+        </ul>
+      }
+    </ion-card-content>
+  </ion-card>
+</ion-content>
